@@ -62,9 +62,7 @@ app.post("/voice/incoming", (req, res) => {
 
   const twiml = new VoiceResponse();
   const gather = twiml.gather({
-    input: "speech dtmf",
-    speechModel: "phone_call",
-    enhanced: true,
+    input: "speech dtmf", 
     action: "/voice/respond",
     method: "POST",
     speechTimeout: "3",
