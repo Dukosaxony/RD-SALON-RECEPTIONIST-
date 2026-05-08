@@ -65,7 +65,7 @@ app.post("/voice/incoming", (req, res) => {
     input: "speech",
     action: "/voice/respond",
     method: "POST",
-    speechTimeout: "auto",
+    speechTimeout: "3",
     language: "en-US",
   });
 
@@ -128,7 +128,7 @@ app.post("/voice/respond", async (req, res) => {
       input: "speech",
       action: "/voice/respond",
       method: "POST",
-      speechTimeout: "auto",
+      speechTimeout: "3",
       language: "en-US",
     });
 
